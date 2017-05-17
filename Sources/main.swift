@@ -166,6 +166,12 @@ func checkOnly(testDir: Directory, testFiles: [FilePath]) throws -> Bool {
 
     for testFile in testFiles {
         let testClasses = getTestClasses(try testFile.open())
+
+        guard !testClasses.values.isEmpty else {
+            print("  \(path): Skipping, no test classes found.")
+            continue
+        }
+
         let allTestsTestClasses = getTestClassesFromAllTests(try testFile.open())
 
         missingTests.merge(with: testClassesDifference(testClasses, declared: allTestsTestClasses))
