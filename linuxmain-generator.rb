@@ -7,7 +7,7 @@ class LinuxmainGenerator < Formula
 
   def install
     ENV["CC"] = ""
-    system "swift", "build", "-c", "release"
+    system "swift", "build", "--disable-sandbox", "-c", "release"
     bin.install ".build/release/linuxmain-generator"
   end
 end
