@@ -24,7 +24,7 @@ extension String {
 		guard let start = range(of: before)?.upperBound,
 			let end = range(of: after, range: start..<endIndex)?.lowerBound
 			else { return nil }
-		return self[start..<end]
+        return String(self[start..<end])
 	}
 }
 

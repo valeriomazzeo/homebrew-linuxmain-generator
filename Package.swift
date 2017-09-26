@@ -1,8 +1,17 @@
+// swift-tools-version:4.0
+
 import PackageDescription
 
 let package = Package(
-    name: "linuxmain-generator"
+    name: "linuxmain-generator",
+    products: [
+      .executable(name: "linuxmain-generator", targets: ["linuxmain-generator"])
+    ],
+    dependencies: [
+        .package(url: "https://github.com/kareman/Moderator", .upToNextMajor(from: "0.4.2")),
+        .package(url: "https://github.com/kareman/FileSmith", .upToNextMajor(from: "0.1.6"))
+    ],
+    targets: [
+        .target(name: "linuxmain-generator", dependencies: ["Moderator", "FileSmith"])
+    ]
 )
-
-package.dependencies.append(.Package(url: "https://github.com/kareman/Moderator", "0.4.0"))
-package.dependencies.append(.Package(url: "https://github.com/kareman/FileSmith", "0.1.5"))
