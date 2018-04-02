@@ -171,7 +171,7 @@ func checkOnly(testDir: Directory, testFiles: [FilePath]) throws -> Bool {
 
         missingTests.merge(with: testClassesDifference(testClasses, declared: allTestsTestClasses))
 
-        allTestClassNames.formUnion(Set(testClasses.flatMap({ $0.value.isEmpty ? nil : $0.key })))
+        allTestClassNames.formUnion(Set(testClasses.compactMap({ $0.value.isEmpty ? nil : $0.key })))
     }
 
     // Check for missing test classes in LinuxMain.swift

@@ -14,23 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "linuxmain-generator::linuxmain-generator"
-               BuildableName = "linuxmain-generator"
-               BlueprintName = "linuxmain-generator"
-               ReferencedContainer = "container:linuxmain-generator.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FileSmith::FileSmith"
-               BuildableName = "FileSmith.framework"
-               BlueprintName = "FileSmith"
+               BlueprintIdentifier = "Moderator::Moderator"
+               BuildableName = "Moderator.framework"
+               BlueprintName = "Moderator"
                ReferencedContainer = "container:linuxmain-generator.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -56,9 +42,23 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "Moderator::Moderator"
-               BuildableName = "Moderator.framework"
-               BlueprintName = "Moderator"
+               BlueprintIdentifier = "linuxmain-generator::linuxmain-generator"
+               BuildableName = "linuxmain-generator"
+               BlueprintName = "linuxmain-generator"
+               ReferencedContainer = "container:linuxmain-generator.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "FileSmith::FileSmith"
+               BuildableName = "FileSmith.framework"
+               BlueprintName = "FileSmith"
                ReferencedContainer = "container:linuxmain-generator.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -68,7 +68,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
@@ -79,7 +78,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -89,9 +87,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "linuxmain-generator::linuxmain-generator"
-            BuildableName = "linuxmain-generator"
-            BlueprintName = "linuxmain-generator"
+            BlueprintIdentifier = "Moderator::Moderator"
+            BuildableName = "Moderator.framework"
+            BlueprintName = "Moderator"
             ReferencedContainer = "container:linuxmain-generator.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

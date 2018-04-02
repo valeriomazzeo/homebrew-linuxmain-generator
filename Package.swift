@@ -8,7 +8,7 @@ let package = Package(
       .executable(name: "linuxmain-generator", targets: ["linuxmain-generator"])
     ],
     dependencies: [
-        .package(url: "https://github.com/kareman/Moderator", .upToNextMajor(from: "0.4.2")),
+        .package(url: "https://github.com/kareman/Moderator", .upToNextMajor(from: "0.4.3")),
         .package(url: "https://github.com/kareman/FileSmith", .upToNextMajor(from: "0.1.6"))
     ],
     targets: [
